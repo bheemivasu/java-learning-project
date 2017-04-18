@@ -5,7 +5,7 @@ package com.learning.operators.arithmaticoperator;
  */
 public class RelationalOperator {
 
-    public void equalRelationalOperator() {
+    public static void equalRelationalOperator() {
 
         int x = 50;
         int y = 50;
@@ -14,12 +14,71 @@ public class RelationalOperator {
         } else {
             System.out.println("not equal");
         }
+    }
+
+    public static void notEqualRelationalOperator() {
+
+        int x = 50;
+        int y = 60;
+        if (x != y) {
+            System.out.println("!=operator Both x and y are notequal");
+        } else {
+            System.out.println("!=operator  equal");
+        }
+
+    }
+
+    public static void lessThen() {
+        int x = 50;
+        int y = 60;
+        if (x < y) {
+            System.out.println("< operator y big");
+        } else {
+            System.out.println("< operator x big");
+        }
+
+    }
+
+    public static void greterThen() {
+        int x = 50;
+        int y = 60;
+        if (x > y) {
+            System.out.println("> operator x big");
+        } else {
+            System.out.println("> operator y big");
+        }
+
+    }
+
+    public static void lessThenEqual() {
+        int x = 50;
+        int y = 50;
+        if (x <= y) {
+            System.out.println("<= operator y big or equal");
+        } else {
+            System.out.println("<= operator x big or equal");
+        }
+
+    }
+
+    public static void greterThenEqual() {
+        int x = 50;
+        int y = 60;
+        if (x >= y) {
+            System.out.println(">= operator x big or equal");
+        } else {
+            System.out.println(">= operator y big or equal");
+        }
 
     }
 
     public static void main(String[] args) {
-        RelationalOperator relationalOperator = new RelationalOperator();
-        relationalOperator.equalRelationalOperator();
+        equalRelationalOperator();
+        notEqualRelationalOperator();
+        lessThen();
+        greterThen();
+        lessThenEqual();
+        greterThenEqual();
     }
 }
 
