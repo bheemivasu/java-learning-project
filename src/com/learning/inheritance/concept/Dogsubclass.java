@@ -5,17 +5,20 @@ package com.learning.inheritance.concept;
  */
 public class Dogsubclass extends Animalsclass {
     public  void animalSound(){
+        super.animals();
+        super.animalsTypes();
         System.out.println("Dog sound");
     }
     public void dogColor(){
-        System.out.println("Dog color is black");
+
+              System.out.println("Dog color is black");
     }
 
     public static void main(String[] args) {
         Dogsubclass dog =new Dogsubclass();
         dog.animalSound();
         dog.dogColor();
-        dog.animals();
-        dog.animalsTypes();
+       // dog.animals();
+        //dog.animalsTypes();
     }
 }
