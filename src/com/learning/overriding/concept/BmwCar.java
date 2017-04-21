@@ -10,9 +10,11 @@ package com.learning.overriding.concept;
 public class BmwCar extends CarParent {
 
 	public void move() {
+		super.move();
 		System.out.println("car can move fastly");
 	}
 	public void light(){
+		super.light();
 		System.out.println("Bright lighting");
 	}
 }
