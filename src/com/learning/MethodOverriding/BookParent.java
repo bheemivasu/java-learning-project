@@ -13,4 +13,8 @@ public class BookParent {
     public void bookType(){
         System.out.println("book type is parent");
     }
+
+    public String getMyBookName(String mybookname){
+        return mybookname;
+    }
 }

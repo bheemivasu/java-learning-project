@@ -15,12 +15,15 @@ public class BookChilid extends BookParent {
     public void bookRef(){
         System.out.println("Book ref by google");
     }
-
+    public Integer getMyBookName(Integer mybookname){
+        return mybookname;
+    }
     public static void main(String[] args) {
         BookChilid bb=new BookChilid();
         bb.bookSize();
         bb.bookColor();
         bb.bookRef();
         bb.bookType();
+        bb.getMyBookName("vasu");
     }
 }
